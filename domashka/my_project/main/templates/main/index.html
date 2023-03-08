@@ -1,0 +1,348 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+    {% block navbar %}
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="container-fluid d-flex mt-avto mt-5">
+                <div class="nav-logo">
+                    <img src="https://ic.wampi.ru/2023/03/01/Logo.png" alt="">
+                    <h3>DESIGNZCY</h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-li " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-li" href="{% url 'btn1' %}">Service</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-li " href="#" data-bs-toggle="dropdown">
+                                Portfolio
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-li" aria-current="page" href="#">Blog</a>
+                        </li>
+
+                    </ul>
+                    <div class="button-nav">
+                        <button ><a class="nav-link active text-li " aria-current="page" href="{% url 'btn1' %}">Contact us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
+
+    <div class="container">
+        <div class="section-nav">
+            <div class="sect-nav1">
+                <h1>Smart Web <br>
+                    Design Agency</h1>
+
+                <p>We will provide best web design and business devlopment <br>
+                    service clients expectation and satisfaction guarantee.</p>
+
+                <button>Free consultation</button>
+            </div>
+
+            <div class="sect-nav2">
+                <img src="http://127.0.0.1:5500/logo/social-communication-3654546-3049735.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <div class="container">
+            <h1 class="Provide">{{ txt12 }}</h1>
+            <div class="sectcards1">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_card">
+                                <img src="http://127.0.0.1:5500/logo/Icon.png" alt="">
+                                <h1>{{ txt1 }}</h1>
+                                <p>{{ txt2 }}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_card">
+                                <img src="http://127.0.0.1:5500/logo/2icon.png" alt="">
+                                <h1>{{ txt3 }}</h1>
+                                <p>{{ txt4 }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_card">
+                                <img src="http://127.0.0.1:5500/logo/Icon%20happy%20client.png" alt="">
+                                <h1>{{ txt5 }}</h1>
+                                <p>{{ txt6 }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="Service">{{ txt7 }}</h1>
+
+            <div class="sect1-cards2">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_2card">
+                                <img src="http://127.0.0.1:5500/sect12/web-design%201.png" alt="">
+                                <h1>{{ txt8 }}</h1>
+                                <p>{{ txt9}} <br>
+                                    {{ txt10}} <br>
+                                    {{ txt11 }}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_2card">
+                                <img src="http://127.0.0.1:5500/sect12/web-design%201.png" alt="">
+                                <h1>{{ txt8 }}</h1>
+                                <p>{{ txt9}} <br>
+                                    {{ txt10}} <br>
+                                    {{ txt11 }}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sect-1card">
+                            <div class="sect1_2card">
+                                <img src="http://127.0.0.1:5500/sect12/web-design%201.png" alt="">
+                                <h1>{{ txt8 }}</h1>
+                                <p>{{ txt9}} <br>
+                                    {{ txt10}} <br>
+                                    {{ txt11 }}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section3">
+            <h1 class="Creative">{{ txt13 }}
+            </h1>
+            <div class="sect3cards">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/1.png" alt="">
+                            <h1>{{ txt14 }}</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/22.png" alt="">
+                            <h1>{{ txt15 }}</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/33.png" alt="">
+                            <h1>{{ txt15 }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sect3cards2">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/44.png" alt="">
+                            <h1>{{ txt16 }}</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/55.png" alt="">
+                            <h1>{{ txt17 }}</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="sectcard1">
+                            <img src="http://127.0.0.1:5500/sect3/66.png" alt="">
+                            <h1>{{ txt18 }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vieww">
+                <button class="View">{{ txt19 }}</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="section5">
+            <h1 class="Meet">{{ txt20 }}</h1>
+
+
+            <div class="sect5cards">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="sect5card1">
+                            <div class="imgchel">
+                                <img src="http://127.0.0.1:5500/chel/111.png" alt="">
+                            </div>
+                            <h1>Amanda Linda </h1>
+                            <p>Executive officer</p>
+                            <div class="sotceti">
+                                <img src="/chel/Fb.png" alt="">
+                                <img src="/chel/Tw.png" alt="">
+                                <img src="/chel/Ld.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="sect5card1">
+                            <div class="imgchel">
+                                <img src="http://127.0.0.1:5500/chel//222.png" alt="">
+                            </div>
+                            <h1>Alex Smith</h1>
+                            <p>UX/UI DESIGNER</p>
+                            <div class="sotceti">
+                                <img src="http://127.0.0.1:5500/chel/Fb.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Tw.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Ld.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="sect5card1">
+                            <div class="imgchel">
+                                <img src="http://127.0.0.1:5500/chel/3333.png" alt="">
+                            </div>
+                            <h1> Anthony Fauci</h1>
+                            <p>Web Developer</p>
+                            <div class="sotceti">
+                                <img src="http://127.0.0.1:5500/chel/Fb.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Tw.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Ld.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="sect5card1">
+                            <div class="imgchel">
+                                <img src="http://127.0.0.1:5500/chel/444.png" alt="">
+                            </div>
+                            <h1>Khalid Abbed</h1>
+                            <p>Head of Markter</p>
+                            <div class="sotceti">
+                                <img src="http://127.0.0.1:5500/chel/Fb.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Tw.png" alt="">
+                                <img src="http://127.0.0.1:5500/chel/Ld.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footerblocks">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                            <div class="footer-block1">
+                                <div class="footer-logo">
+                                    <img src="http://127.0.0.1:5500/logo/Logo.png" alt="">
+                                    <h3>DESIGNZCY</h3>
+                                </div>
+                                <p class="Metairie">Metairie, 3689 Bassel Street, LA, Louisiana</p>
+                                <p class="Metairie">Contact us: 225-788-5489</p>
+                                <img src="http://127.0.0.1:5500/footeer/Social.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                            <div class="footer-block2">
+                                <h1>Category</h1>
+                                <p>Home</p>
+                                <p>About</p>
+                                <p>Services</p>
+                                <p>Reviews</p>
+                                <p>Article</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                            <div class="footer-block3">
+                                <h1>About</h1>
+                                <p>Partners</p>
+                                <p>Careers</p>
+                                <p>Press</p>
+                                <p>Community</p>
+                                <p>Support </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                            <div class="footer-block4">
+                                <h1>Subscribe newsletter</h1>
+                                <p>Sign up for tips, new offers, and exclusive promos.</p>
+                                <div class="input-group flex-nowrap">
+                                    <input type="text" class="form-control" placeholder="Enter your email"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="Subcribe">Subcribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

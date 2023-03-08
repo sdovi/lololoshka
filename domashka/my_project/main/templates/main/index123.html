@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="{% static 'main/css/imymac.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    {% block navbar %}
+    <div class="container">
+        <nav class="navbar navbar-expand-lg mt-2">
+            <div class="container-fluid">
+                <div class="nav-content">
+                    <img class="nav-img" src="https://www.imymac.com/imgs/imymac.svg" alt="">
+                    <h1 class="imacmac">iMyMac</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  ms-auto">
+                        <li class="hover-1 nav-item">
+                            <a class=" nav-link" href="#" role="button" >
+                                Продукт и решение
+                            </a>
+                        </li>
+                        <li class="hover-1 nav-item">
+                            <a class="nav-link" href="#">Магазин</a>
+                        </li>
+                        <li class="hover-1 nav-item">
+                            <a class="nav-link" href="#">Подержка</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% endblock %}
+
+    </div>
+
+    <div class="container">
+        <div class="section1">
+            <img  src="https://www.imymac.com/imgs/ico/pmm-logo.webp" alt="">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" class="sect1-text">
+                <h1>{{ text00 }}</h1>
+                <h3>{{ text01 }} <span class="Mac">{{ text02 }} </span>{{ text03 }}</h3>
+
+                <p>PowerMyMac поможет вам оптимизировать и очистить ваш Mac. Простые клики, <br>
+                    чтобы освободить место на Mac, ускорить работу MacBook или iMac. Держите свой <br>
+                    Mac всегда в лучшем виде.</p>
+            </div>
+            <div class="sect1-button">
+                <button class="free">{{ text04_btn }}</button>
+                <button class="buy">{{ text05_btn }}</button>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="sect2-img1">
+                <img data-aos="zoom-in-up" class="sect2-img" src="https://ic.wampi.ru/2023/03/03/sect1.png" alt="">
+            </div>
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" class="sect2-text">
+                <h1>Освободите руки, сэкономьте <br>
+                    время</h1>
+
+                <p>В настоящее время мы используем высокотехнологичные инструменты, которые <br> помогают нам убрать
+                    комнату и одежду. Это освобождает наши руки и приносит <br> нам большое удобство. Почему не наши
+                    Маки? На вашем Mac слишком много мест <br> для сохранения файлов и бесчисленное количество мест, где
+                    накапливается мусор <br> и беспорядок. Кто может тратить целый день на копание в папках и файлах?
+                    <br>
+                    Вот почему нам нужен PowerMyMac. <br>
+                    PowerMyMac ориентирован на очистку, он призван помочь пользователям удалить <br> ненужные файлы и
+                    приложения, чтобы освободить место для вашего Mac.
+                </p>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="sect4-block">
+                <div data-aos="fade-down" data-aos-easing="linear"                data-aos-duration="1500" class="sect4-blocks">
+                    <img src="https://www.imymac.com/imgs/pmm/merit-show.svg" alt="">
+                    <div class="sect4-content">
+                        <h1>Эффективно и<br> безопасно очистите <br> свой Mac</h1>
+                        <p class="sss">PowerMyMac освобождает приличный объем дискового пространства, очищая системный
+                            мусор, идентифицируя и удаляя бесполезные элементы, такие как старые резервные копии iOS,
+                            большие и старые файлы, находя дубликаты или похожие фотографии, удаляя ненужные приложения
+                            и их остатки и т. д.</p>
+                        <p class="PowerMyMac">PowerMyMac имеет встроенную защиту. Он выберет только те файлы, которые
+                            безопасны для удаления. С другой стороны, PowerMyMac даже ускоряет ваш Mac. Он удаляет
+                            устаревшие ненужные файлы, что дает вашему Mac дополнительный импульс.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <h1 data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">Кому следует приобрести PiweMymac</h1>
+            <div class="sect3-blocks">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div data-aos="fade-down" class="sect3-block">
+                            <img src="https://ic.wampi.ru/2023/03/07/Screenshot_1.png" alt="">
+                            <p>На вашем Mac заканчивается место на <br> диске, особенно если вы получаете <br>
+                                предупреждение «Ваш диск почти <br> заполнен».</p>
+                        </div>
+                    </div>
+                    <div class=" col-md-6 col-sm-12">
+                        <div data-aos="fade-down" class="sect3-block">
+                            <img src="https://ic.wampi.ru/2023/03/07/Screenshot_1.png" alt="">
+                            <p>На вашем Mac заканчивается место на <br> диске, особенно если вы получаете <br>
+                                предупреждение «Ваш диск почти <br> заполнен».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sect3-blocks mt-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div data-aos="fade-down" class="sect3-block">
+                            <img src="https://ic.wampi.ru/2023/03/07/Screenshot_1.png" alt="">
+                            <p>На вашем Mac заканчивается место на <br> диске, особенно если вы получаете <br>
+                                предупреждение «Ваш диск почти <br> заполнен».</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div data-aos="fade-down" class="sect3-block">
+                            <img src="https://ic.wampi.ru/2023/03/07/Screenshot_1.png" alt="">
+                            <p>На вашем Mac заканчивается место на <br> диске, особенно если вы получаете <br>
+                                предупреждение «Ваш диск почти <br> заполнен».</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
